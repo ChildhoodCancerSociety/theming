@@ -1,0 +1,16 @@
+{
+  "name": "@ccs-dev/theming",
+  "version": "1.0.0",
+  "description": "Theming properties for CCS developer work",
+  "main": "dist/index.js",
+  "files": [
+    "dist/*.js"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ibrahim Saberi",
+  "license": "MIT"
+}

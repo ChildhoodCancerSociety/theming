@@ -1,11 +1,14 @@
 {
-  "name": "@ccs-dev/theming",
+  "name": "@ccs-dev/theming-home",
   "version": "1.0.0",
   "description": "theming for ccs projects",
   "main": "./bin/index.js",
   "exports": {
     ".": "./bin/index.js",
-    "./tailwind": "./bin/tailwind.config.js"
+    "./tailwind": "./bin/tailwind.config.js",
+    "./css": "./bin/tailwind.css",
+    "./colors": "./bin/colors.js",
+    "./effects": "./bin/effects.js"
   },
   "files": [
     "bin/*.js",
@@ -13,6 +16,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "build",
+    "build": "tsc",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -25,6 +30,7 @@
     "@storybook/addon-essentials": "^7.0.4",
     "@storybook/addon-interactions": "^7.0.4",
     "@storybook/addon-links": "^7.0.4",
+    "@storybook/addon-styling": "^1.0.0",
     "@storybook/blocks": "^7.0.4",
     "@storybook/react": "^7.0.4",
     "@storybook/react-webpack5": "^7.0.4",
@@ -34,6 +40,9 @@
     "@types/react-dom": "^18.0.11",
     "eslint": "^8.38.0",
     "eslint-config-ccs": "^1.2.0",
+    "jsdom": "^21.1.1",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.2.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
