@@ -6,6 +6,9 @@
   "exports": {
     ".": "./tailwind.config.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "tailwind.config.js"
   ],
