@@ -2,10 +2,21 @@
   "name": "@ccs-dev/theming",
   "version": "1.0.0",
   "description": "theming for ccs projects",
-  "main": "index.js",
+  "main": "./bin/index.js",
+  "exports": {
+    ".": "./bin/index.js",
+    "./tailwind": "./bin/tailwind.config.js"
+  },
+  "files": [
+    "bin/*.js",
+    "bin/*.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ibrahim Saberi <georgeipsum@gmail.com> (https://twitter.com/ibubeeboo)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
 }
