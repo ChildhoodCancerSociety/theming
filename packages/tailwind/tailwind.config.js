@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 const tailwindConfig = {
   theme: {
     colors: {
@@ -118,6 +117,27 @@ const tailwindConfig = {
         800: "#FF3146",
         900: "#FF1834",
         950: "#FF0023",
+      },
+    },
+    screens: {
+      sm: "540px",
+      md: "820px",
+      lg: "968px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+      mono: ["Martian Mono", "monospace"],
+    },
+    extend: {
+      borderRadius: {
+        xs: "1px",
+        sm: "4px",
+        md: "8px",
+        lg: "12px",
+        xl: "16px",
+        full: "9999px",
       },
     },
   },
