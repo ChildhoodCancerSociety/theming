@@ -16,8 +16,6 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "build",
-    "build": "tsc",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },

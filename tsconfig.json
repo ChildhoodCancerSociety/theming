@@ -103,6 +103,7 @@
   "include": [
     "tests/**/*.ts",
     "tests/**/*.tsx",
-    "packages/**/*.ts"
+    "packages/**/*.ts",
+    "packages/**/*.js"
   ]
 }

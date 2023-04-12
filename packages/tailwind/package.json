@@ -1,0 +1,11 @@
+{
+  "name": "@ccs-dev/tailwind",
+  "version": "1.0.0",
+  "description": "generic tailwind config and styles for CCS projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ibrahim Saberi",
+  "license": "MIT"
+}
